@@ -18,7 +18,7 @@ if __name__ == '__main__':
     assert calculate_fuel(1969) == 966
     assert calculate_fuel(100756) == 50346
 
-    mass_by_module = input_file_to_list('input_data.txt')
+    mass_by_module = input_file_to_list('day1_input.txt')
     fuel_by_module = list(map(calculate_fuel, mass_by_module))
     total_fuel_requirement = sum(fuel_by_module)
 
